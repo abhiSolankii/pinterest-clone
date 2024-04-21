@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+.containerpers {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cardpers {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  border: solid black 1px;
+  border-style: groove;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-picture :hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.tagline,
+.description {
+  color: #555;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100px;
+}
+
+.button:hover {
+  background-color: #911919;
+}
+
+/* css for file upload section starts */
+.file-upload-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.fileupload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin: 10px auto;
+}
+.fileupload input[type="file"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+.fileupload input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+.fileupload button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.fileupload button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 600px) {
+  .file-upload-form {
+    width: 90%;
+  }
+}
+/* css for file upload section ends */
